@@ -40,6 +40,11 @@ const Header = () => {
               </button>
             </li>
             <li>
+              <button onClick={() => scrollToSection('testimonials')} className="text-foreground hover:text-primary transition-colors">
+                Testimonials
+              </button>
+            </li>
+            <li>
               <button onClick={() => scrollToSection('contact')} className="text-foreground hover:text-primary transition-colors">
                 Contact
               </button>
