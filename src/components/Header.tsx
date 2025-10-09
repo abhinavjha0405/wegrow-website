@@ -1,0 +1,58 @@
+import { Button } from "@/components/ui/button";
+import { Building2 } from "lucide-react";
+
+const Header = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border">
+      <div className="container mx-auto px-4 py-4">
+        <nav className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+              <Building2 className="w-6 h-6 text-primary-foreground" />
+            </div>
+            <div>
+              <h1 className="text-xl font-bold text-foreground">WeGrow Consultancy</h1>
+              <p className="text-xs text-muted-foreground">& Solution</p>
+            </div>
+          </div>
+          
+          <ul className="hidden md:flex items-center gap-8">
+            <li>
+              <button onClick={() => scrollToSection('home')} className="text-foreground hover:text-primary transition-colors">
+                Home
+              </button>
+            </li>
+            <li>
+              <button onClick={() => scrollToSection('services')} className="text-foreground hover:text-primary transition-colors">
+                Services
+              </button>
+            </li>
+            <li>
+              <button onClick={() => scrollToSection('process')} className="text-foreground hover:text-primary transition-colors">
+                Process
+              </button>
+            </li>
+            <li>
+              <button onClick={() => scrollToSection('contact')} className="text-foreground hover:text-primary transition-colors">
+                Contact
+              </button>
+            </li>
+          </ul>
+
+          <Button onClick={() => scrollToSection('contact')}>
+            Get Quote
+          </Button>
+        </nav>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
