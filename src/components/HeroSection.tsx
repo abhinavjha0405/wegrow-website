@@ -30,7 +30,7 @@ const HeroSection = () => {
               From company registration to scaling strategies, we provide end-to-end business solutions that help startups and enterprises achieve sustainable growth.
             </p>
             
-            <div className="flex flex-wrap gap-4 mb-12">
+            <div className="flex flex-wrap gap-4">
               <Button size="lg" onClick={() => scrollToSection('contact')} className="gap-2">
                 Get Free Consultation
                 <ArrowRight className="w-4 h-4" />
@@ -38,21 +38,6 @@ const HeroSection = () => {
               <Button size="lg" variant="outline" onClick={() => scrollToSection('services')}>
                 View Our Work
               </Button>
-            </div>
-
-            <div className="grid grid-cols-3 gap-8">
-              <div>
-                <h3 className="text-3xl font-bold text-primary mb-1">500+</h3>
-                <p className="text-sm text-muted-foreground">Companies Registered</p>
-              </div>
-              <div>
-                <h3 className="text-3xl font-bold text-primary mb-1">98%</h3>
-                <p className="text-sm text-muted-foreground">Success Rate</p>
-              </div>
-              <div>
-                <h3 className="text-3xl font-bold text-primary mb-1">24/7</h3>
-                <p className="text-sm text-muted-foreground">Support Available</p>
-              </div>
             </div>
           </div>
 
