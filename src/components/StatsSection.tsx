@@ -30,12 +30,16 @@ const StatsSection = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
           {stats.map((stat, index) => (
-            <Card key={index} className="text-center animate-fade-in border-border/50 hover:shadow-lg transition-shadow">
+            <Card 
+              key={index} 
+              className="text-center animate-scale-in border-border/50 hover-lift group"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
               <CardContent className="pt-8 pb-6">
-                <div className="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-secondary rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/10 transition-colors">
                   <stat.icon className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
+                <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
                   {stat.value}
                 </h3>
                 <p className="text-sm text-muted-foreground">{stat.label}</p>

@@ -40,7 +40,11 @@ const TestimonialsSection = () => {
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="animate-fade-in bg-white relative">
+            <Card 
+              key={index} 
+              className="animate-slide-up hover-lift bg-white relative"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
               <CardContent className="pt-8 pb-6">
                 <Quote className="w-8 h-8 text-primary/20 mb-4" />
                 

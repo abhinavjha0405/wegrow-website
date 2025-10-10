@@ -25,28 +25,57 @@ const Header = () => {
           
           <ul className="hidden md:flex items-center gap-8">
             <li>
-              <button onClick={() => scrollToSection('home')} className="text-foreground hover:text-primary transition-colors">
+              <button 
+                onClick={() => scrollToSection('home')} 
+                className="relative text-foreground hover:text-primary transition-colors group py-1"
+              >
                 Home
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
               </button>
             </li>
             <li>
-              <button onClick={() => scrollToSection('services')} className="text-foreground hover:text-primary transition-colors">
+              <button 
+                onClick={() => scrollToSection('services')} 
+                className="relative text-foreground hover:text-primary transition-colors group py-1"
+              >
                 Services
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
               </button>
             </li>
             <li>
-              <button onClick={() => scrollToSection('process')} className="text-foreground hover:text-primary transition-colors">
+              <button 
+                onClick={() => scrollToSection('projects')} 
+                className="relative text-foreground hover:text-primary transition-colors group py-1"
+              >
+                Projects
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
+              </button>
+            </li>
+            <li>
+              <button 
+                onClick={() => scrollToSection('process')} 
+                className="relative text-foreground hover:text-primary transition-colors group py-1"
+              >
                 Process
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
               </button>
             </li>
             <li>
-              <button onClick={() => scrollToSection('testimonials')} className="text-foreground hover:text-primary transition-colors">
+              <button 
+                onClick={() => scrollToSection('testimonials')} 
+                className="relative text-foreground hover:text-primary transition-colors group py-1"
+              >
                 Testimonials
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
               </button>
             </li>
             <li>
-              <button onClick={() => scrollToSection('contact')} className="text-foreground hover:text-primary transition-colors">
+              <button 
+                onClick={() => scrollToSection('contact')} 
+                className="relative text-foreground hover:text-primary transition-colors group py-1"
+              >
                 Contact
+                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left" />
               </button>
             </li>
           </ul>
