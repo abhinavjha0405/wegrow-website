@@ -39,11 +39,12 @@ const ProjectsSection = () => {
           </div>
           
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Recent <span className="text-primary">Projects</span>
+            Businesses We've{" "}
+            <span className="text-primary">Helped Succeed</span>
           </h2>
           
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            See how we've helped businesses like yours achieve their goals with our comprehensive solutions
+            From startups to established enterprises, see how we've helped businesses achieve their goals and scale successfully.
           </p>
         </div>
 
