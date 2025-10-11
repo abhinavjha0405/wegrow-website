@@ -8,16 +8,16 @@ const XIcon = () => (
 
 const SocialSidebar = () => {
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook", color: "hover:text-[#1877F2]" },
-    { icon: XIcon, href: "#", label: "X", color: "hover:text-[#000000] dark:hover:text-[#FFFFFF]" },
-    { icon: Linkedin, href: "#", label: "LinkedIn", color: "hover:text-[#0A66C2]" },
-    { icon: Instagram, href: "#", label: "Instagram", color: "hover:text-[#E4405F]" },
-    { icon: Youtube, href: "#", label: "YouTube", color: "hover:text-[#FF0000]" },
+    { icon: Facebook, href: "#", label: "Facebook", color: "text-[#1877F2]", bgColor: "bg-[#1877F2]" },
+    { icon: XIcon, href: "#", label: "X", color: "text-[#000000] dark:text-[#FFFFFF]", bgColor: "bg-[#000000]" },
+    { icon: Linkedin, href: "#", label: "LinkedIn", color: "text-[#0A66C2]", bgColor: "bg-[#0A66C2]" },
+    { icon: Instagram, href: "#", label: "Instagram", color: "text-[#E4405F]", bgColor: "bg-[#E4405F]" },
+    { icon: Youtube, href: "#", label: "YouTube", color: "text-[#FF0000]", bgColor: "bg-[#FF0000]" },
   ];
 
   return (
     <div className="fixed right-0 top-1/2 -translate-y-1/2 z-50 hidden lg:block">
-      <div className="bg-card border-l border-t border-b border-border rounded-l-lg shadow-lg overflow-hidden">
+      <div className="rounded-l-lg shadow-lg overflow-hidden">
         {socialLinks.map((social, index) => {
           const IconComponent = social.icon;
           return (
@@ -26,7 +26,7 @@ const SocialSidebar = () => {
               href={social.href}
               target="_blank"
               rel="noopener noreferrer"
-              className={`flex items-center justify-center w-12 h-12 text-muted-foreground ${social.color} hover:bg-primary/5 transition-all duration-300 border-b border-border last:border-b-0 group`}
+              className={`flex items-center justify-center w-12 h-12 ${social.bgColor} text-white hover:opacity-90 transition-all duration-300 group`}
               aria-label={social.label}
             >
               {social.icon === XIcon ? (
