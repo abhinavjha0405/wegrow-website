@@ -105,7 +105,7 @@ const ContactSection = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">+91 1234567890</p>
+                <p className="text-muted-foreground">+91 89290 20833</p>
                 <p className="text-sm text-muted-foreground mt-1">Mon-Sat: 9AM - 7PM</p>
               </CardContent>
             </Card>
@@ -131,8 +131,9 @@ const ContactSection = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">123 Business District</p>
-                <p className="text-sm text-muted-foreground mt-1">Mumbai, Maharashtra, India</p>
+                <p className="text-muted-foreground">T2612, West, near Sanjay Park, Block B,</p>
+                <p className="text-muted-foreground">Baljit Nagar, Patel Nagar</p>
+                <p className="text-sm text-muted-foreground mt-1">New Delhi, Delhi, 110008</p>
               </CardContent>
             </Card>
           </div>

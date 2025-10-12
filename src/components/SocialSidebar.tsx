@@ -1,4 +1,4 @@
-import { Facebook, Linkedin, Instagram, Youtube } from "lucide-react";
+import { Facebook, Linkedin, Instagram, Youtube, MessageCircle } from "lucide-react";
 
 const XIcon = () => (
   <svg viewBox="0 0 24 24" className="w-5 h-5" fill="currentColor">
@@ -13,6 +13,7 @@ const SocialSidebar = () => {
     { icon: Linkedin, href: "#", label: "LinkedIn", color: "text-[#0A66C2]", bgColor: "bg-[#0A66C2]" },
     { icon: Instagram, href: "#", label: "Instagram", color: "text-[#E4405F]", bgColor: "bg-[#E4405F]" },
     { icon: Youtube, href: "#", label: "YouTube", color: "text-[#FF0000]", bgColor: "bg-[#FF0000]" },
+    { icon: MessageCircle, href: "https://wa.me/918929020833", label: "WhatsApp", color: "text-[#25D366]", bgColor: "bg-[#25D366]" },
   ];
 
   return (
