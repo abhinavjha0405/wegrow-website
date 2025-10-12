@@ -26,7 +26,13 @@ const SocialSidebar = () => {
               key={index}
               href={social.href}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow external"
+              referrerPolicy="no-referrer"
+              onClick={(e) => {
+                // Ensure links open outside preview sandbox
+                e.preventDefault();
+                window.open(social.href, "_blank", "noopener,noreferrer");
+              }}
               className={`flex items-center justify-center w-12 h-12 ${social.bgColor} text-white hover:opacity-90 transition-all duration-300 group`}
               aria-label={social.label}
             >
