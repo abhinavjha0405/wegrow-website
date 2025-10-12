@@ -19,6 +19,10 @@ const Header = () => {
               alt="WeGrow Consultancy & Solution" 
               className="h-12 w-auto object-contain"
             />
+            <div>
+              <h1 className="text-xl font-bold text-foreground">WeGrow Consultancy</h1>
+              <p className="text-xs text-muted-foreground">& Solution</p>
+            </div>
           </div>
           
           <ul className="hidden md:flex items-center gap-8">
