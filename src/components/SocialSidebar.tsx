@@ -12,7 +12,7 @@ const SocialSidebar = () => {
     { icon: XIcon, href: "#", label: "X", color: "text-[#000000] dark:text-[#FFFFFF]", bgColor: "bg-[#000000]" },
     { icon: Linkedin, href: "https://in.linkedin.com/company/wegrowconsultancyandsolution", label: "LinkedIn", color: "text-[#0A66C2]", bgColor: "bg-[#0A66C2]" },
     { icon: Instagram, href: "https://www.instagram.com/wegrowconsultancy/", label: "Instagram", color: "text-[#E4405F]", bgColor: "bg-[#E4405F]" },
-    { icon: Youtube, href: "https://www.youtube.com/@wegrowsolution", label: "YouTube", color: "text-[#FF0000]", bgColor: "bg-[#FF0000]" },
+    { icon: Youtube, href: "https://www.youtube.com/@wegrowsolution", label: "YouTube", color: "text-[#FF0000]", bgColor: "bg-[#FF0000]",target="_blank" },
     { icon: MessageCircle, href: "https://wa.me/918929020833", label: "WhatsApp", color: "text-[#25D366]", bgColor: "bg-[#25D366]" },
   ];
 
